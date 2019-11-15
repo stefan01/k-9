@@ -342,7 +342,7 @@ class AccountSettingsFragment : PreferenceFragmentCompat(), ConfirmationDialogFr
                 getString(R.string.cancel_action)
         )
         dialogFragment.setTargetFragment(this, REQUEST_DELETE_ACCOUNT)
-        dialogFragment.show(fragmentManager, TAG_DELETE_ACCOUNT_CONFIRMATION)
+        dialogFragment.show(requireFragmentManager(), TAG_DELETE_ACCOUNT_CONFIRMATION)
     }
 
     override fun doPositiveClick(dialogId: Int) {

@@ -164,7 +164,7 @@ class SettingsImportFragment : Fragment() {
                 targetFragment = this,
                 requestCode = REQUEST_PASSWORD_PROMPT
         )
-        dialogFragment.show(fragmentManager, null)
+        dialogFragment.show(requireFragmentManager(), null)
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
