@@ -310,8 +310,12 @@
         <outgoing uri="smtp+tls+://posteo.de" username="$email" />
     </provider>
     <provider id="systemliorg" label="systemli.org" domain="systemli.org">
-        <incoming uri="imap+ssl+://mail.systemli.org" username="$email" />
+        <incoming uri="imap+tls+://mail.systemli.org" username="$email" />
         <outgoing uri="smtp+tls+://mail.systemli.org" username="$email" />
+    </provider>
+    <provider id="trutzbox" label="Trutzbox" domain="comidio.email">
+        <incoming uri="imap+ssl+://trutzbox" username="$email" />
+        <outgoing uri="smtp+tls+://trutzbox" username="$email" />
     </provider>
 
     <!-- GMX variants -->
